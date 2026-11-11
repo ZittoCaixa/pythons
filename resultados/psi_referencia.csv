@@ -1,0 +1,10 @@
+﻿variavel,psi_referencia_teste,tipo
+valor_emprestimo_solicitado,0.0032690131664249956,numérica
+taxa_uso_credito,0.0019923555836689785,numérica
+prazo_emprestimo_solicitado,0.0016561483740600523,numérica
+valor_mensal_prestacoes_outros_emprestimos_atual,0.0016410832794243406,numérica
+consultas_credito_ultimos_6meses,0.0012696737126617807,numérica
+tempo_conta_bancaria,0.0009866482063013789,numérica
+qtde_outros_emprestimos_atual,0.0004339475370265455,numérica
+renda_mensal,0.000418013303163053,numérica
+pagamentos_atrasados_ultimos_12meses,0.000210583646764551,numérica

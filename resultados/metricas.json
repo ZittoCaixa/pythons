@@ -1,0 +1,85 @@
+{
+  "dataset": {
+    "n_rows": 25000,
+    "n_columns": 19,
+    "duplicate_id_rows": 0,
+    "missing_by_column": {
+      "tempo_conta_bancaria": 375,
+      "valor_mensal_prestacoes_outros_emprestimos_atual": 500,
+      "consultas_credito_ultimos_6meses": 250
+    },
+    "target_counts": {
+      "0": 23465,
+      "1": 1535
+    },
+    "target_rate": 0.0614,
+    "rows_before_validation": 25000,
+    "features_used": [
+      "tipo_emprego",
+      "tempo_conta_bancaria",
+      "renda_mensal",
+      "qtde_outros_emprestimos_atual",
+      "valor_mensal_prestacoes_outros_emprestimos_atual",
+      "taxa_uso_credito",
+      "consultas_credito_ultimos_6meses",
+      "pagamentos_atrasados_ultimos_12meses",
+      "valor_emprestimo_solicitado",
+      "prazo_emprestimo_solicitado",
+      "objetivo_empréstimo_solicitado",
+      "existencia_garantia"
+    ]
+  },
+  "random_seed": 42,
+  "split": {
+    "train_rows": 20000,
+    "test_rows": 5000,
+    "test_size": 0.2,
+    "stratified": true
+  },
+  "selection_metric": "average_precision",
+  "models_cv": {
+    "Regressão logística": {
+      "best_score": 0.32241573016105207,
+      "cv_std": 0.04230063477706744,
+      "best_params": {
+        "model__C": 1.0
+      }
+    },
+    "Random Forest": {
+      "best_score": 0.2870895695097932,
+      "cv_std": 0.0354771963476965,
+      "best_params": {
+        "model__max_depth": null,
+        "model__max_features": "sqrt",
+        "model__min_samples_leaf": 10
+      }
+    }
+  },
+  "selected_model": "Regressão logística",
+  "test_metrics": {
+    "roc_auc": 0.8471366669188498,
+    "average_precision": 0.3138519149209872,
+    "brier": 0.04890034799380225,
+    "threshold": 0.5,
+    "precision": 0.5128205128205128,
+    "recall": 0.06514657980456026,
+    "f1": 0.11560693641618497,
+    "confusion_matrix": [
+      [
+        4674,
+        19
+      ],
+      [
+        287,
+        20
+      ]
+    ]
+  },
+  "warning": "Avaliação retrospectiva aleatória; sem datas, não representa validação temporal.",
+  "versions": {
+    "python": "3.15.2",
+    "pandas": "3.1.1",
+    "numpy": "2.5.4",
+    "scikit_learn": "1.9.1"
+  }
+}
